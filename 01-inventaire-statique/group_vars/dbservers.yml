@@ -1,1 +1,3 @@
-
+---
+db_port: 5432 # Permet de définir un port personnalisé.
+db_engine: postgresql # Permet de préciser quel moteur de base de données j'utilise.
