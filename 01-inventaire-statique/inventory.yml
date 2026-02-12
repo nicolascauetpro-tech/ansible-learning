@@ -1,1 +1,10 @@
-
+all: # Groupe racine qui englobe l'ensemble des hôtes et des groupes.
+  children: # Mot-clé obligatoire pour déclarer des sous-groupes de machines.
+    webservers: # Identifiant du groupe regroupant les serveurs Web.
+      hosts: # Section listant les machines individuelles appartenant à ce groupe.
+        web1: # Nom d'hôte (hostname) de la première machine web.
+        web2: # Nom d'hôte (hostname) de la deuxième machine web.
+    dbservers: # Identifiant du groupe regroupant les serveurs de bases de données.
+      hosts: # Section listant les machines individuelles appartenant à ce groupe.
+        db1: # Nom d'hôte (hostname) de la première machine de base de données.
+        db2: # Nom d'hôte (hostname) de la deuxième machine de base de données.
